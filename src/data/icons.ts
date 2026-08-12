@@ -5,5 +5,5 @@ export const ICONS: Record<string, LucideIcon> = {
   sun: Sun, zap: Zap, timer: Timer, aperture: Aperture, plane: Plane, focus: Focus, gauge: Gauge,
 };
 export const catIcon: Record<string, LucideIcon> = {
-  Naturaleza: Mountain, Ciudad: Building2, Personas: Users, Dron: Plane,
+  Naturaleza: Mountain, Ciudad: Building2, Personas: Users, Dron: Plane, Deportes: Activity
 };
