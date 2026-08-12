@@ -81,6 +81,11 @@ const PHOTOS: Photo[] = [
     comp:"Pico de la acción · regla de tercios", priority:"freeze", premium:true,
     learn:["Congelar movimiento","AF continuo","ISO alto"],
     edu:"En deportes buscas congelar el instante clave: 1/1000 detiene la acción, el diafragma abierto (f/2.8) separa al jugador del fondo y el ISO sube lo justo para lograr esa velocidad." },
+  { id:"p19", title:"Running a contraluz", cat:"Personas", scene:"sports", diff:"Principiante",
+    env:"Exterior", light:"Golden hour", subject:"Deporte", focal:[70,200], ap:4, iso:400, shutter:1/1000,
+    comp:"Zancada en el aire · deja espacio de avance", priority:"freeze", premium:false,
+    learn:["Congelar la zancada","Seguimiento AF","Timing"],
+    edu:"Para correr, esperas la zancada con los dos pies en el aire y disparas a 1/1000 para congelarla. A contraluz en golden hour, mides sobre el corredor para no dejarlo en negro." },
 ];
 
 const DRONE_PHOTOS: Photo[] = [
