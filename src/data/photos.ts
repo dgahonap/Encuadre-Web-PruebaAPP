@@ -98,6 +98,22 @@ const DRONE_PHOTOS: Photo[] = [
     shot:{ type:"Seguimiento lateral", altStart:50, altEnd:50, gimbal:-45, speed:"3–4 m/s", move:"Traslación siguiendo la costa", orient:"Lateral" },
     comp:"Línea diagonal · contraste mar/tierra", learn:["Líneas costeras","Diagonal dinámica","Seguimiento"],
     edu:"La frontera mar-tierra crea una diagonal potente. Vuela paralelo a la costa a media altura con gimbal a -45° para conservar profundidad." },
+  {  id: "p15", title: "Ciclista en paneo", cat: "Personas", scene: "cityStreet",
+     diff: "Avanzado", env: "Exterior", light: "Día nublado",
+     subject: "Persona en movimiento", comp: "Sujeto fijo, fondo barrido",
+     learn: ["Paneo", "Velocidad lenta", "Seguimiento"],
+     edu: "El paneo mantiene al sujeto nítido mientras el fondo se convierte en líneas de velocidad: sigues al sujeto con la cámara mientras disparas a velocidad lenta.",
+     premium: false,
+     ap: 8, iso: 100, shutter: 1/30,   // lenta a propósito
+     focal: [50, 135], priority: "balanced",},
+  { id: "p16", title: "Fútbol: remate", cat: "Personas", scene: "cityStreet",
+    diff: "Intermedio", env: "Exterior", light: "Día",
+    subject: "Deporte", comp: "Acción congelada, regla de tercios",
+    learn: ["Congelar movimiento", "AF continuo", "ISO alto"],
+    edu: "En deportes buscas congelar el pico de la acción: velocidad muy rápida, enfoque continuo y el ISO que haga falta para conseguirla.",
+    premium: true,
+    ap: 2.8, iso: 1600, shutter: 1/1000,
+    focal: [135, 250], priority: "freeze",},
 ];
 
 export { PHOTOS, DRONE_PHOTOS };
