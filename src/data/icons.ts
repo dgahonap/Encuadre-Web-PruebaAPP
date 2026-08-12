@@ -1,4 +1,4 @@
-import { Sun, Zap, Timer, Aperture, Plane, Focus, Gauge, Mountain, Building2, Users, type LucideIcon } from "lucide-react";
+import { Sun, Zap, Timer, Aperture, Plane, Focus, Gauge, Mountain, Building2, Users, Activity, type LucideIcon } from "lucide-react";
 
 /* Mapea claves de datos (concepts.icon, mission.icon, categoría) a componentes de icono. */
 export const ICONS: Record<string, LucideIcon> = {
