@@ -8,7 +8,7 @@ import { useApp } from "@/hooks/useApp";
 export function ExploreScreen() {
   const router = useRouter();
   const { q, setQ, fCat, setFCat, fDiff, setFDiff, isLocked } = useApp();
-  const cats = ["Todas", "Naturaleza", "Ciudad", "Personas", "Dron"];
+  const cats = ["Todas", "Naturaleza", "Ciudad", "Personas", "Deportes", "Dron"];
   const diffs = ["Todas", "Principiante", "Intermedio", "Avanzado"];
   const list = ALL_PHOTOS.filter((p) => {
     const mq = !q || (p.title + p.cat + p.subject + p.light).toLowerCase().includes(q.toLowerCase());
