@@ -1,0 +1,28 @@
+import type { Concept } from "@/types";
+
+export const CONCEPTS: Record<string, Concept> = {
+  ISO:{ icon:"zap", short:"Sensibilidad del sensor a la luz.",
+    what:"El ISO controla cuán sensible es el sensor a la luz. ISO bajo (100) = poca sensibilidad, máxima calidad. ISO alto (3200+) = más sensibilidad, útil con poca luz.",
+    effect:"Subir el ISO ilumina la foto pero añade ruido (grano). Bajarlo da imágenes más limpias pero necesita más luz.",
+    tip:"Usa el ISO más bajo que te permita una velocidad segura." },
+  Apertura:{ icon:"aperture", short:"Tamaño del diafragma del lente.",
+    what:"La apertura (f/) regula cuánta luz entra y la profundidad de campo. f/1.8 = abierta (mucha luz, fondo desenfocado). f/16 = cerrada (poca luz, todo nítido).",
+    effect:"Abrir (número bajo) desenfoca el fondo y deja entrar más luz. Cerrar (número alto) mantiene todo enfocado.",
+    tip:"Retratos: abre. Paisajes: cierra a f/8–f/11." },
+  Velocidad:{ icon:"timer", short:"Tiempo que el obturador queda abierto.",
+    what:"La velocidad de obturación es el tiempo que entra luz. 1/1000 congela el movimiento; 1 s crea estelas y efecto seda.",
+    effect:"Rápida congela la acción. Lenta muestra movimiento, pero a mano sale movida.",
+    tip:"A mano, no bajes de 1/(distancia focal) para evitar trepidación." },
+  "Distancia focal":{ icon:"focus", short:"El 'zoom' y la perspectiva del lente.",
+    what:"La distancia focal (mm) define el ángulo de visión. 18mm = gran angular (amplio). 200mm = teleobjetivo (acerca y comprime).",
+    effect:"Focal corta exagera la perspectiva y abarca más. Focal larga comprime planos y aísla al sujeto.",
+    tip:"Paisaje: 16–35mm. Retrato: 50–85mm. Fauna/deporte: 200mm+." },
+  "Balance de blancos":{ icon:"sun", short:"El color neutro según la luz.",
+    what:"El balance de blancos ajusta la temperatura de color para que los blancos salgan blancos. 'Luz día' es neutro; 'Tungsteno' enfría luces cálidas.",
+    effect:"Mal ajustado da fotos azuladas o anaranjadas. Bien ajustado respeta los colores reales... o los usa creativamente.",
+    tip:"En golden hour, 'Luz día' conserva el tono cálido." },
+  Exposición:{ icon:"gauge", short:"El equilibrio ISO + apertura + velocidad.",
+    what:"La exposición es el brillo final de la foto, resultado de tres factores: ISO, apertura y velocidad. Es el 'triángulo de exposición'.",
+    effect:"Cambiar uno obliga a compensar con otro. Cerrar el diafragma (menos luz) pide subir ISO o bajar velocidad.",
+    tip:"Decide primero qué prioriza la foto: nitidez, congelar o desenfocar. Lo demás se ajusta alrededor." },
+};
